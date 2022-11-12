@@ -1,0 +1,35 @@
+.container-advantages-list {
+    display: flex;
+
+}
+
+.thumb {
+    display: flex;
+    height: 120px;
+    width: 270px;
+    align-items: center;
+
+    background-color: var(--grey-bcg);
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+.advantages-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--secondary-text);
+    margin-bottom: 10px;
+}
+
+.container-advantages-list .item+.item {
+    margin-left: 30px;
+}
+
+.section-advantages .text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
