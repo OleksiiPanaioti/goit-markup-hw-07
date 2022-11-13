@@ -101,7 +101,6 @@ img {
   transition: transform 400ms cubic-bezier(0.4, 0, 0.2, 1), scale 500ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 400ms cubic-bezier(0.4, 0, 0.2, 1), scale 500ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 400ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .backdrop.is-hidden .modal {
   -webkit-transform: translate(-50%, -50%) scale(0);
           transform: translate(-50%, -50%) scale(0);
@@ -128,7 +127,6 @@ img {
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .modal-close-button:hover {
   fill: var(--accent-color);
 }
@@ -155,6 +153,9 @@ img {
   -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.input-modal:focus {
+  border-color: var(--accent-color);
+}
 
 .input-wrap {
   position: relative;
@@ -170,11 +171,6 @@ img {
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.input-modal:focus {
-  border-color: var(--accent-color);
-}
-
 .input-modal:focus + .modal-input-icon {
   fill: var(--accent-color);
 }
@@ -187,7 +183,6 @@ img {
   color: var(--main-text);
   margin-bottom: 4px;
 }
-
 .label-modal span {
   margin-bottom: 4px;
 }
@@ -210,7 +205,6 @@ img {
   -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .textarea-modal::-webkit-input-placeholder {
   font-weight: 400;
   font-size: 12px;
@@ -218,7 +212,6 @@ img {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-
 .textarea-modal::-moz-placeholder {
   font-weight: 400;
   font-size: 12px;
@@ -226,7 +219,6 @@ img {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-
 .textarea-modal:-ms-input-placeholder {
   font-weight: 400;
   font-size: 12px;
@@ -234,7 +226,6 @@ img {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-
 .textarea-modal::-ms-input-placeholder {
   font-weight: 400;
   font-size: 12px;
@@ -242,7 +233,6 @@ img {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-
 .textarea-modal::placeholder {
   font-weight: 400;
   font-size: 12px;
@@ -250,7 +240,6 @@ img {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-
 .textarea-modal:focus {
   border-color: var(--accent-color);
 }
@@ -374,7 +363,6 @@ body {
   letter-spacing: 0.03em;
   color: var(--secondary-text);
 }
-
 .logo > span {
   color: var(--accent-color);
 }
@@ -435,11 +423,9 @@ body {
   display: flex;
   margin-left: auto;
 }
-
-.contacts .item + .item {
-  margin-left: 50px;
+.contacts .contacts-link:hover, .contacts .contacts-link:focus {
+  color: var(--accent-color);
 }
-
 .contacts .contacts-link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -447,10 +433,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 10px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  gap: 10px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -463,9 +449,10 @@ body {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.contacts .contacts-link:hover,
-.contacts .contacts-link:focus {
+.contacts .item + .item {
+  margin-left: 50px;
+}
+.contacts .contacts-link:hover, .contacts .contacts-link:focus {
   color: var(--accent-color);
 }
 
@@ -533,9 +520,7 @@ body {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.btn-hero:hover,
-.btn-hero:focus {
+.btn-hero:hover, .btn-hero:focus {
   background-color: rgba(47, 48, 58, 0.4);
 }
 
@@ -742,7 +727,6 @@ body {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .link-projects-portfolio:hover {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -763,6 +747,10 @@ body {
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
 }
+.link-projects-portfolio:hover .overlay {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
 
 .text-overlay {
   font-family: "Roboto";
@@ -774,11 +762,6 @@ body {
   padding-top: 63px;
   padding-right: 24px;
   color: var(--white-text);
-}
-
-.link-projects-portfolio:hover .overlay {
-  -webkit-transform: translateY(0%);
-          transform: translateY(0%);
 }
 
 .btn {
@@ -805,6 +788,12 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.btn:hover, .btn:focus {
+  color: var(--white-text);
+  background-color: var(--accent-color);
+  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
 
 .btn.primary {
   color: var(--secondary-text);
@@ -814,14 +803,6 @@ body {
 .btn.secondary {
   color: var(--secondary-text);
   background-color: var(--accent-color);
-}
-
-.btn:hover,
-.btn:focus {
-  color: var(--white-text);
-  background-color: var(--accent-color);
-  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .footer-main {
@@ -836,7 +817,6 @@ body {
   letter-spacing: 0.03em;
   color: var(--white-text);
 }
-
 .footer-logo > span {
   color: var(--accent-color);
 }
@@ -844,7 +824,6 @@ body {
 .address {
   margin-top: 20px;
 }
-
 .address .item:not(:last-child) {
   margin-bottom: 9px;
 }
@@ -859,9 +838,7 @@ body {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.address-google:hover,
-.address-google:focus {
+.address-google:hover, .address-google:focus {
   color: var(--accent-color);
 }
 
@@ -873,9 +850,7 @@ body {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.address-link:hover,
-.address-link:focus {
+.address-link:hover, .address-link:focus {
   color: var(--accent-color);
 }
 
@@ -904,81 +879,35 @@ body {
   padding-left: 16px;
   color: var(--white-text);
 }
-
-.form-label-footer {
-  display: inline-block;
-  margin-bottom: 20px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--white-text);
-}
-
 .form-input-footer::-webkit-input-placeholder {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-
 .form-input-footer::-moz-placeholder {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-
 .form-input-footer:-ms-input-placeholder {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-
 .form-input-footer::-ms-input-placeholder {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-
 .form-input-footer::placeholder {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-}
-
-.form-input-footer {
-  width: 358px;
-  height: 50px;
-}
-
-.form-field-footer-pos {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.form-field-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 12px;
-}
-
-.form-input-footer {
-  width: 358px;
-  height: 50px;
-  background-color: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  padding-left: 16px;
-  color: var(--white-text);
 }
 
 .form-label-footer {
@@ -990,60 +919,16 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--white-text);
-}
-
-.form-input-footer::-webkit-input-placeholder {
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.form-input-footer::-moz-placeholder {
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.form-input-footer:-ms-input-placeholder {
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.form-input-footer::-ms-input-placeholder {
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.form-input-footer::placeholder {
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.form-input-footer {
-  width: 358px;
-  height: 50px;
 }
 
 .icon-social-in-link-footer {
   fill: currentColor;
 }
-
-.link-icon-social-footer:hover {
-  background-color: var(--accent-color);
-}
-
 .link-icon-social-footer:hover .icon-social-in-link-footer {
   fill: var(--white-text);
 }
 
+.link-icon-social-footer:hover,
 .link-icon-social-footer:focus {
   background-color: var(--accent-color);
 }
@@ -1058,10 +943,6 @@ body {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-}
-
-.btn-footer-submit:focus {
-  background-color: #2F303A;
 }
 
 .btn-footer-submit {
@@ -1085,13 +966,15 @@ body {
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .btn-footer-submit > span {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   padding-left: 10px;
+}
+.btn-footer-submit:focus {
+  background-color: #2F303A;
 }
 
 .btn-submit {
@@ -1157,23 +1040,20 @@ body {
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.link-icon-social:hover {
+  background-color: var(--accent-color);
+}
+.link-icon-social:focus {
+  background-color: var(--accent-color);
+}
 
 .icon-social-in-link {
   fill: currentColor;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.link-icon-social:hover {
-  background-color: var(--accent-color);
-}
-
 .link-icon-social:hover .icon-social-in-link {
   fill: var(--white-text);
-}
-
-.link-icon-social:focus {
-  background-color: var(--accent-color);
 }
 
 .link-icon-social:focus .icon-social-in-link {
@@ -1291,23 +1171,19 @@ body {
   -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.icon-client {
-  fill: currentColor;
-}
-
 .clients-logo-link:hover {
   border-color: var(--accent-color);
 }
-
-.clients-logo-link:hover .icon-client {
-  fill: var(--accent-color);
-}
-
 .clients-logo-link:focus {
   border-color: var(--accent-color);
 }
 
+.icon-client {
+  fill: currentColor;
+}
+.clients-logo-link:hover .icon-client {
+  fill: var(--accent-color);
+}
 .clients-logo-link:focus .icon-client {
   fill: var(--accent-color);
 }/*# sourceMappingURL=main.css.map */

@@ -6,9 +6,9 @@
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--secondary-text);
-
+    
+    &>span {
+            color: var(--accent-color);
+        }
 }
 
-.logo>span {
-    color: var(--accent-color);
-}
