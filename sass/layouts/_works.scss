@@ -1,19 +1,19 @@
- .portfolio {
+ .we-do{
      padding-top: 0;
  }
 
- .container-portfolio .title {
+ .we-do__container .we-do__title {
      margin-bottom: 50px;
 
  }
 
- .container-portfolio-list {
+ .we-do__list {
      display: flex;
      gap: 30px;
 
  }
 
- .portfolio .title,
+ .we-do .we-do__title,
  .team .title {
      font-weight: 700;
      font-size: 36px;
@@ -23,12 +23,12 @@
      color: var(--secondary-text);
  }
 
- .portfolio-list {
+ .we-do__item {
      position: relative;
 
  }
 
- .foe-thumb {
+ .we-do__thumb {
      position: absolute;
      display: inline-block;
      width: 100%;

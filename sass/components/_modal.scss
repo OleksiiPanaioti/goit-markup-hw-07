@@ -184,9 +184,8 @@
 }
 
 .check-text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include centeredFlex;
+
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -208,15 +207,15 @@
 }
 
 .check-text span {
+    @include centeredFlex;
+
     width: 16px;
     height: 15px;
     border: 2px solid var(--secondary-text);
     border-radius: 3px;
     margin-right: 5px;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
 
     fill: transparent;
     margin-right: 8.4px;
