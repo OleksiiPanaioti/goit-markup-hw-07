@@ -1,3 +1,5 @@
+
+
 .social {
     @include centeredFlex;
     gap: 10px;
@@ -57,7 +59,7 @@
 
 // footer
 
-.social-title-footer {
+.social-footer__title {
 
     font-weight: 700;
     font-size: 14px;
@@ -70,14 +72,14 @@
 }
 
 
-.list-social-footer {
+.social-footer__list {
     @include centeredFlex;
     gap: 10px;
 
 
 }
 
-.icon-social-footer {
+.social-footer__item {
     @include centeredFlex;
 
     width: 44px;
@@ -87,7 +89,7 @@
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-.link-icon-social-footer {
+.social-footer__link {
 
     display: flex;
     justify-content: center;
